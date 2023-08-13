@@ -1,0 +1,165 @@
+.jumbotron {
+    font-family: Poppins, Helvetica, sans-serif;
+    background-color: rgb(158, 152, 139);
+}
+p.lead {
+    font-size: small;
+}
+
+body {
+ min-height: 100pc;
+
+}
+
+
+a.copyright {
+    text-decoration: none;
+}
+a#playbutton:hover {
+    background-color: green;
+    color: aliceblue;
+}
+#layanan {
+    font-family: poppins, Arial, sans-serif;
+
+}
+#shop {
+background-color: aqua;
+margin-top: 300px;
+}
+
+#layanan:hover {
+    height: 70px;
+
+
+}
+
+
+.button-menulain {
+    background-color:#fd6b02;
+    margin-left: 10px;
+}
+a .button-menulain {
+  text-decoration: none;
+
+}
+
+/* Gaya untuk pop-up */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    background-color: rgb(243, 195, 112); 
+  }
+  
+/* Gaya untuk tombol close */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:rgb(214, 18, 18);
+    font-style: bold;
+     background-color: rgb(0, 0, 0); 
+     border-radius: 50%;
+  }
+  
+
+  /* Gaya untuk latar belakang gelap */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+/* Media query untuk responsivitas */
+@media screen and (max-width: 768px) {
+    #popup {
+      max-width: 90%; /* Mengatur lebar maksimal pop-up pada ukuran layar lebih kecil */
+    }
+  }
+/* Gaya untuk countdown (kotak hitam) */
+#countdown {
+    text-align: center;
+    margin: 60px auto; /* Kurangi margin dari 50px menjadi 20px */
+    background-color: rgb(255, 255, 255); /* Latar belakang hitam pada countdown */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Gaya untuk pesan selamat hari kemerdekaan */
+  #message {
+    text-align: center;
+    margin: 90px auto;
+  }
+  
+  /* Gaya untuk terompet terbang (posisi tengah dan sedikit atas dari countdown) */
+  #fireworks {
+    position: fixed;
+    top: 45%; /* Posisi vertikal sedikit atas dari tengah layar */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-image: url('/img/merdeka-pancasila.gif'); /* Ganti dengan gambar terompet terbang */
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+    display: none; /* Mulai dengan terompet terbang tersembunyi */
+  }
+  
+  /* Gaya untuk countdown besar dan elegan */
+  .timerElement {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 50px; /* Perbesar ukuran huruf angka pada countdown */
+  }
+  
+  .timerBox {
+    background-color: #E74C3C; /* Warna merah tua untuk kotak angka */
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .timerValue {
+    font-weight: bold;
+  }
+  
+  .timerLabel {
+    font-size: 12px;
+    color: #ffffff; /* Warna abu-abu */
+  }
+  
+  /* Gaya untuk garis pemisah */
+  #divider {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0 5px;
+  }
+  
+  .bannner {
+    width:100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      .saweria {
+        text-decoration: none;
+    
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrothersWEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- awal navbar -->
+    <nav class="navbar fixed-top bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/img/logo-adbrothersweb-new.png" alt="BrothersWEB" width="203" height="47">
+          </a>
+        </div>
+      </nav>
+<!-- Countdown -->
+<div id="countdown">
+  <h1>Countdown Kemerdekaan Indonesia</h1>
+  <div id="countdownContainer">
+    <div class="timerElement">
+      <div class="timerBox">
+        <div class="timerValue" id="days"></div>
+        <div class="timerLabel">Hari</div>
+      </div>
+    </div>
+    <div class="timerElement">
+      <div class="timerBox">
+        <div class="timerValue" id="hours"></div>
+        <div class="timerLabel">Jam</div>
+      </div>
+    </div>
+    <div class="timerElement">
+      <div class="timerBox">
+        <div class="timerValue" id="minutes"></div>
+        <div class="timerLabel">Menit</div>
+      </div>
+    </div>
+    <div class="timerElement">
+      <div class="timerBox">
+        <div class="timerValue" id="seconds"></div>
+        <div class="timerLabel">Detik</div>
+      </div>
+    </div>
+    <div id="divider"></div> <!-- Tambahkan pemisah (titik dua) -->
+  </div>
+</div>
+
+
+<!-- Pesan Selamat Hari Kemerdekaan -->
+<div id="message" style="display: none;">
+  <h3>MERDEKAAA yang ke-78!</h3>
+  <div id="terompetAnimation">
+    <img class="bannner" src="/img/banner hut ri 78 pada 17 agustus 2023 download cdr vector.png" alt="Terompet" class="terompetImage">
+    <img src="/img/merdeka-pancasila.gif" alt="Terompet" class="terompetImage">
+   
+  </div>
+  <audio id="terompetSound">
+    <source src="/sound/lagu17.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div> 
+<!-- Terompet Terbang -->
+<div id="fireworks" style="display: none;"></div>
+<!-- Latar belakang gelap (overlay) -->
+<div id="overlay"></div>
+
+<!-- Pop-up Selamat Datang -->
+<div id="popup">
+  <button class="close-button" onclick="closePopup()">X</button>
+  <h2>Selamat datang diBrothersWEB!</h2>
+  <p>Nikmati pengalaman menarik bersama kami.</p>
+  <button onclick="closePopup()">Tutup</button>
+</div>
+<audio id="popupSound" src="sound/Selamat datang di brothersWEB.mp3"></audio> <!-- Elemen audio -->
+    <!-- akhir navbar -->
+      <!-- awal jumbotron -->
+      <section class="jumbotron">
+      <div class="container-fluid p-5">
+      <div class="jumbotron text-center mt-5 ">
+        <img src="img/logoadbrothers.jpg" class="rounded-circle" >
+        <h1 class="display-4">Selamat datang diBrothersWEB!</h1>
+        <p class="lead">ini adalah website dari AD Brothers yang bertujuan untuk memberikan sebuah informasi seputar teknologi.</p>
+        <hr class="my-4">
+        <p>kami juga mempunyai menu lain.</p>
+        <a href="#layanan"> <button class="button-linkmenu btn-lg" style="background-color: #fd6b02;">lihat menu lain</button></a>
+        
+   
+      </div></div></section>
+
+      <section id="layanan">
+        <div class="container mt-">
+          <div class="row">
+            <div class="col text-center mt-5 ">
+           <div id="menulayanan"> LAYANAN</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center mt-5 ">
+         <a href="/service/index.html"><img class="service" src="img/service.png" height="50"></a>
+        </div>
+          <div class="col text-center mt-5 ">
+         <a href="/blog/index.html"><img class="blog" src="img/blog.png" height="50"> </a>
+        </div>
+          <div class="col text-center mt-5 ">
+        <a href="/tips/index.html"> <img class="" src="img/tips.png" height="50"></a>
+        </div>
+       <div class="container"> <div class="row">
+          <div class="col text-center mt-2 ">
+         Service
+        </div>
+          <div class="col text-center mt-2 ">
+         Blog
+        </div>
+          <div class="col text-center mt-2 ">
+        Tips
+      
+      </div></div></div>
+     
+      </section>
+
+      <!-- akhir jumbotron -->
+
+  </section>
+
+
+
+ <script src="script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+    <!-- footer -->
+    <footer class="bg-dark  fixed-bottom text-light text-center">
+      <div class="container">
+          <div class="row">
+             <div class="col-md-6 mt-2 mb-lg-3">
+             Kirim dukungan dengan mengirim donasi ke AD Brothers dengan cara Scan Barcode atau kunjungi <a class="saweria" href="https://saweria.co/adbrothers" target="_blank"> SAWERIA AD Brothers</a> 
+           
+            </div>
+        
+             <div class="col mt-1 mb-2 ">
+              <div class="text-center">
+                &copy; copyright 2023 by <a class="copyright" href="https://linktr.ee/adbrothers" target="_blank">AD Brothers.</a></p>
+            </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+</html>
